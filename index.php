@@ -30,8 +30,6 @@
     <section class="section">
         <div class="container">
             <h6><span>Tarefas</span><span>Contatos</span></h6>
-            <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-            <label for="reg-log"></label>
             <div class="card-3d-wrap">
                 <div class="card-3d-wrapper">
                     <div class="card-front">
@@ -42,7 +40,7 @@
 						</header>
 						<section class="container-conteudo">
 							<div class="container-index-main">
-								<div class="container-index-adicionar"><a href="http://localhost:8000/adicionar.php"><button>Adicionar Tarefas</button></a></div>
+								<div class="container-index-adicionar"><a href="http://localhost:8000/Tarefas/adicionar.php"><button>Adicionar Tarefas</button></a></div>
 								<div class="container-index-tabela">
 									<table>
 										<thead>
@@ -62,8 +60,8 @@
 												<td><?= htmlspecialchars($tarefa['tarefa']) ?></td>
 												<td><?= htmlspecialchars($tarefa['concluida']) ?></td>
 												<td>
-													<a href="editar.php?id=<?= $id ?>"><button>Editar</button></a>
-													<a href="deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')"><button>Excluir</button></a>
+													<a href="Tarefas/editar.php?id=<?= $id ?>"><button>Editar</button></a>
+													<a href="Tarefas/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')"><button>Excluir</button></a>
 												</td>
 											</tr>
 											<?php endforeach; ?>
@@ -81,7 +79,7 @@
 						</header>
 						<section class="container-conteudo">
 							<div class="container-index-main">
-								<div class="container-index-adicionar"><a href="http://localhost:8000/adicionar.php"><button>Adicionar Contatos</button></a></div>
+								<div class="container-index-adicionar"><a href="http://localhost:8000/Contatos/adicionar.php"><button>Adicionar Contatos</button></a></div>
 								<div class="container-index-tabela">
 									<table>
 										<thead>
@@ -99,8 +97,8 @@
 												<td><?= htmlspecialchars($contact['sobrenome']) ?></td>
 												<td><?= htmlspecialchars($contact['phone']) ?></td>
 												<td>
-													<a href="editar.php?id=<?= $id ?>"><button>Editar</button></a>
-													<a href="deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir este contato?')"><button>Excluir</button></a>
+													<a href="Contatos/editar.php?id=<?= $id ?>"><button>Editar</button></a>
+													<a href="Contatos/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir este contato?')"><button>Excluir</button></a>
 												</td>
 											</tr>
 											<?php endforeach; ?>

@@ -31,100 +31,53 @@ h6 span {
   font-size: 14px;
 }
 
-.checkbox:checked,
-.checkbox:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
-
-.checkbox:checked + label,
-.checkbox:not(:checked) + label {
-  position: relative;
-  display: block;
-  text-align: center;
-  width: 60px;
-  height: 16px;
-  border-radius: 8px;
-  padding: 0;
-  margin: 10px auto;
-  cursor: pointer;
-  background-color: #ffeba7;
-}
-
-.checkbox:checked + label:before,
-.checkbox:not(:checked) + label:before {
-  position: absolute;
-  display: block;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  color: #ffeba7;
-  background-color: #102770;
-  font-family: "FontAwesome";
-  content: "\f061"; /* FontAwesome arrow icon */
-  z-index: 20;
-  top: -10px;
-  left: -10px;
-  line-height: 36px;
-  text-align: center;
-  font-size: 18px;
-  transition: all 0.5s ease;
-}
-
-.checkbox:checked + label:before {
-  content: "\f060"; /* FontAwesome arrow icon pointing left */
-  transform: translateX(44px) rotate(-360deg);
-}
 
 .card-3d-wrap {
   position: relative;
-  width: 40vw;
+  width: 90vw;
   max-width: 100%;
   height: 60vh;
-  transform-style: preserve-3d;
-  perspective: 800px;
   margin-top: 60px;
 }
 
 .card-3d-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform-style: preserve-3d;
-  transition: all 600ms ease-out;
+  width: 90vw;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-front,
 .card-back {
+  width: 47%;
+  height: 100%;
+  background-color: #2a2b38;
+  border-radius: 6px;
+  padding: 0px 20px;	
+}
+
+.adicionar{
+  width: 45vw;
+  height: 60vh;
+  display: flex;
+  margin: 0 auto;
+}
+
+.card-adicionar{
   width: 100%;
   height: 100%;
   background-color: #2a2b38;
-  position: absolute;
   border-radius: 6px;
-  left: 0;
-  top: 0;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-  padding: 0px 20px 20px 20px;	
-}
-
-.card-back {
-  transform: rotateY(180deg);
-}
-
-.checkbox:checked ~ .card-3d-wrap .card-3d-wrapper {
-  transform: rotateY(180deg);
+  padding: 0px 20px;	
 }
 
 .container-conteudo{
-    width: 40vw;
-    height: 55vh;
+    width: 100%;
+    height: 80%;
 }
 
 .header-conteudo{
-    width: 40vw;
+    width: 100%;
     height: 5vh;
     margin-bottom: 20px;
 }
