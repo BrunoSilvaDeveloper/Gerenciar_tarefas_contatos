@@ -9,7 +9,7 @@
         "destination": "/api/tarefas/:1"
       },
       {
-        "source": "^/index\\.php$",
+        "source": "^/index\.php$",
         "destination": "/api/index"
       },
       {
