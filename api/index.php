@@ -1,11 +1,5 @@
 <?php 
 
-
-	session_save_path(__DIR__ . '/sessions');
-	if (!is_dir(__DIR__ . '/sessions')) {
-		mkdir(__DIR__ . '/sessions', 0777, true);
-	}
-	
 	session_start();
 
 	// Inicializa a sessão 'tarefas' se não estiver definida
