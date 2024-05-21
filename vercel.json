@@ -1,12 +1,11 @@
 {
-    "routes": [],
     "rewrites": [
       {
-        "source": "^/contatos/(adicionar|deletar|editar)/?",
+        "source": "^/Contatos/(adicionar|deletar|editar)/?",
         "destination": "/api/contatos/:1"
       },
       {
-        "source": "^/tarefas/(adicionar|deletar|editar|visualizar)/?",
+        "source": "^/Tarefas/(adicionar|deletar|editar|visualizar)/?",
         "destination": "/api/tarefas/:1"
       },
       {
