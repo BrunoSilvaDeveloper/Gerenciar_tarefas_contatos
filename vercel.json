@@ -1,12 +1,12 @@
 {
     "rewrites": [
       {
-        "source": "^/Contatos/(adicionar|deletar|editar)/?",
-        "destination": "/api/Contatos/:1"
+        "source": "^/contatos/(adicionar|deletar|editar)/?",
+        "destination": "/api/contatos/:1"
       },
       {
-        "source": "^/Tarefas/(adicionar|deletar|editar|visualizar)/?",
-        "destination": "/api/Tarefas/:1"
+        "source": "^/tarefas/(adicionar|deletar|editar|visualizar)/?",
+        "destination": "/api/tarefas/:1"
       },
       {
         "source": "^/index\\.php$",
