@@ -24,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <section class="section">
@@ -40,7 +40,7 @@
 						</header>
 						<section class="container-conteudo">
 							<div class="container-index-main">
-								<div class="container-index-adicionar"><a href="Tarefas/adicionar.php"><button>Adicionar Tarefas</button></a></div>
+								<div class="container-index-adicionar"><a href="../tarefas/adicionar.php"><button>Adicionar Tarefas</button></a></div>
 								<div class="container-index-tabela">
 									<table>
 										<thead>
@@ -60,9 +60,9 @@
 												<td><?= htmlspecialchars($tarefa['tarefa']) ?></td>
 												<td><?= htmlspecialchars($tarefa['concluida']) ?></td>
 												<td>
-													<a href="Tarefas/visualizar.php?id=<?= $id ?>"><button><i class="fas fa-eye"></i></button></a>
-													<a href="Tarefas/editar.php?id=<?= $id ?>"><button><i class="fas fa-pencil-alt"></i></button></a>
-													<a href="Tarefas/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')"><button><i class="fas fa-trash-alt"></i></button></a>
+													<a href="../tarefas/visualizar.php?id=<?= $id ?>"><button><i class="fas fa-eye"></i></button></a>
+													<a href="../tarefas/editar.php?id=<?= $id ?>"><button><i class="fas fa-pencil-alt"></i></button></a>
+													<a href="../tarefas/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')"><button><i class="fas fa-trash-alt"></i></button></a>
 												</td>
 											</tr>
 											<?php endforeach; ?>
@@ -80,7 +80,7 @@
 						</header>
 						<section class="container-conteudo">
 							<div class="container-index-main">
-								<div class="container-index-adicionar"><a href="Contatos/adicionar.php"><button>Adicionar Contatos</button></a></div>
+								<div class="container-index-adicionar"><a href="../contatos/adicionar.php"><button>Adicionar Contatos</button></a></div>
 								<div class="container-index-tabela">
 									<table>
 										<thead>
@@ -98,8 +98,8 @@
 												<td><?= htmlspecialchars($contact['sobrenome']) ?></td>
 												<td><?= htmlspecialchars($contact['phone']) ?></td>
 												<td>
-													<a href="Contatos/editar.php?id=<?= $id ?>"><button>Editar</button></a>
-													<a href="Contatos/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir este contato?')"><button>Excluir</button></a>
+													<a href="../contatos/editar.php?id=<?= $id ?>"><button>Editar</button></a>
+													<a href="../contatos/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir este contato?')"><button>Excluir</button></a>
 												</td>
 											</tr>
 											<?php endforeach; ?>

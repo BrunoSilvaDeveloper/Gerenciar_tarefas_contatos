@@ -22,7 +22,7 @@
                     'tarefa' => $tarefa,
                     'concluida' => $concluida,
                 ];
-                header('location: ../index.php');
+                header('location: ../api/index.php');
                 exit();
             }else{
                 $error = "Telefone incorreto";
@@ -79,7 +79,7 @@
                                 </div>
                                 <div class="container-home">
                                     <h1>Mais opções</h1>
-                                    <a href="../index.php"><button>Voltar</button></a>
+                                    <a href="../api/index.php"><button>Voltar</button></a>
                                 </div>
                             </div>
 						</section>

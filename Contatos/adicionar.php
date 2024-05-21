@@ -13,7 +13,7 @@
                 'sobrenome' => $sobrenome,
                 'phone' => $phone
             ];
-            header('Location: ../index.php');
+            header('Location: ../api/index.php');
             exit;
         }
         else{
@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="container-home">
                                     <h1>Mais opções</h1>
-                                    <a href="../index.php"><button>Voltar</button></a>
+                                    <a href="../api/index.php"><button>Voltar</button></a>
                                 </div>
                             </div>
 						</section>
