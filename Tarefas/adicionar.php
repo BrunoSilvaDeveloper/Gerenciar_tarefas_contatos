@@ -77,7 +77,7 @@
 
                                     </form>
                                 </div>
-                                <div class="container-sing-in">
+                                <div class="container-home">
                                     <h1>Mais opções</h1>
                                     <a href="../index.php"><button>Voltar</button></a>
                                 </div>

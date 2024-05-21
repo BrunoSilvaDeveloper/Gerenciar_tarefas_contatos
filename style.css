@@ -64,11 +64,12 @@ h6 span {
 }
 
 .card-adicionar{
-  width: 100%;
+  width: 400px;
   height: 100%;
   background-color: #2a2b38;
   border-radius: 6px;
   padding: 0px 20px;	
+  margin: 0 auto;
 }
 
 .container-conteudo{
@@ -195,5 +196,123 @@ td::-webkit-scrollbar-track {
 }
 
 .container-index-tabela::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+
+.form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.form input{
+  width: 360px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px ;
+}
+.form button{
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.container-home button {
+  width: 100px;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.concluida{
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.radio input{
+  cursor: pointer;
+}
+
+.btn-editar{
+  margin: 10px !important;
+  margin-top: 10px !important;
+}
+
+.container-ver h4{
+  margin: 0px;
+  margin-right: 10px;
+}
+
+.container-ver p{
+  margin: 0px;
+}
+
+.ver-nome{
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  margin: 20px 0 ;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.ver-telefone{
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  margin: 20px 0 ;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.ver-tarefa{
+  width: 100%;
+  max-width: 400px;
+  height: 150px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+}
+.ver-tarefa p{
+  margin-top: 10px;
+}
+
+.ver-concluida{
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  margin: 20px 0 ;
+}
+
+.ver-tarefa::-webkit-scrollbar {
+  width: 9px;
+}
+
+.ver-tarefa::-webkit-scrollbar-thumb {
+  background: #007BFF;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ver-tarefa::-webkit-scrollbar-track {
   background: #f1f1f100;
 }

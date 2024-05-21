@@ -60,7 +60,7 @@
 												<td><?= htmlspecialchars($tarefa['tarefa']) ?></td>
 												<td><?= htmlspecialchars($tarefa['concluida']) ?></td>
 												<td>
-												<a href="Tarefas/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')"><button><i class="fas fa-eye"></i></button></a>
+													<a href="Tarefas/visualizar.php?id=<?= $id ?>"><button><i class="fas fa-eye"></i></button></a>
 													<a href="Tarefas/editar.php?id=<?= $id ?>"><button><i class="fas fa-pencil-alt"></i></button></a>
 													<a href="Tarefas/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')"><button><i class="fas fa-trash-alt"></i></button></a>
 												</td>

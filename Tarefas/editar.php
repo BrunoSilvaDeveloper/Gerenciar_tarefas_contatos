@@ -10,7 +10,6 @@
     }
 
     $id = $_GET['id'];
-    $tarefa = $_SESSION['tarefas'][$id];
     $nome = $_SESSION['tarefas'][$id]['nome'];
     $phone = $_SESSION['tarefas'][$id]['phone'];
     $tarefa = $_SESSION['tarefas'][$id]['tarefa'];
@@ -65,7 +64,6 @@
 						<section class="container-conteudo">
                             <div class="container-card">
                                 <div class="container-form">
-                                    <h1>Adicionar Contato</h1>
                                     <form action="editar.php?id=<?= $id ?>" method="post" class="form">
 
                                         <!--Imput Nome-->
@@ -80,15 +78,17 @@
                                         <input type="text" name="tarefa" value="<?= isset($error) && $error == 'Telefone incorreto' || isset($error) && !empty($tarefa) ? $tarefa : $tarefa ?>" placeholder="<?= isset($error) && $error == 'Telefone incorreto' ? 'Tarefa' : (isset($error) ? $error : "Tarefa") ?>" required style="<?= isset($error) && empty($tarefa) ? "border: 1px solid red;": "" ?>">
 
                                         <div class="concluida">
-                                            <input type="radio" name="concluida" value="Sim" required ><label for="concluida">Sim</label>
-                                            <input type="radio" name="concluida" value="Não" required  checked ><label for="concluida">Não</label>
+                                            <p>Concluída: </p>
+                                            <div class="radio"><input type="radio" name="concluida" value="Sim" required ><label for="concluida">Sim</label></div>
+                                            <div class="radio"><input type="radio" name="concluida" value="Não" required  checked ><label for="concluida">Não</label></div>
                                         </div>
+                                            
                                         <!--Botao-->
-                                        <button type="submit">Enviar</button>
+                                        <button type="submit" class="btn-editar"   >Enviar</button>
 
                                     </form>
                                 </div>
-                                <div class="container-sing-in">
+                                <div class="container-home">
                                     <h1>Mais opções</h1>
                                     <a href="../index.php"><button>Voltar</button></a>
                                 </div>
