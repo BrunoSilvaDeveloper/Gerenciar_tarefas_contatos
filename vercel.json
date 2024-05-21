@@ -1,25 +1,25 @@
 {
   "rewrites": [
     {
-      "src": "^/contatos/(adicionar|deletar|editar)/?",
+      "source": "^/contatos/(adicionar|deletar|editar)/?",
       "destination": "/api/contatos/:1",
       "headers": {
         "Content-Type": "application/json"
       }
     },
     {
-      "src": "^/tarefas/(adicionar|deletar|editar|visualizar)/?",
+      "source": "^/tarefas/(adicionar|deletar|editar|visualizar)/?",
       "destination": "/api/tarefas/:1",
       "headers": {
         "Content-Type": "application/json"
       }
     },
     {
-      "src": "^/index\\.php$",
+      "source": "^/index\\.php$",
       "destination": "/api/index"
     },
     {
-      "src": "^/(.*)$",
+      "source": "^/(.*)$",
       "destination": "/$1"
     }
   ]
