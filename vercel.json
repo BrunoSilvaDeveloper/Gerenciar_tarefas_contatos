@@ -1,19 +1,39 @@
 {
   "rewrites": [
     {
-      "source": "^/contatos/(adicionar|deletar|editar)/?",
-      "destination": "/api/contatos/:1"
+      "source": "/contatos/adicionar",
+      "destination": "/contatos/adicionar.php"
     },
     {
-      "source": "^/tarefas/(adicionar|deletar|editar|visualizar)/?",
-      "destination": "/api/tarefas/:1"
+      "source": "/contatos/deletar",
+      "destination": "/contatos/deletar.php"
     },
     {
-      "source": "^/index\\.php$",
-      "destination": "/api/index"
+      "source": "/contatos/editar",
+      "destination": "/contatos/editar.php"
     },
     {
-      "source": "^/(.*)$",
+      "source": "/tarefas/adicionar",
+      "destination": "/tarefas/adicionar.php"
+    },
+    {
+      "source": "/tarefas/deletar",
+      "destination": "/tarefas/deletar.php"
+    },
+    {
+      "source": "/tarefas/editar",
+      "destination": "/tarefas/editar.php"
+    },
+    {
+      "source": "/tarefas/visualizar",
+      "destination": "/tarefas/visualizar.php"
+    },
+    {
+      "source": "/index.php",
+      "destination": "/index.php"
+    },
+    {
+      "source": "/(.*)",
       "destination": "/$1"
     }
   ]
