@@ -2,17 +2,11 @@
   "rewrites": [
     {
       "source": "^/contatos/(adicionar|deletar|editar)/?",
-      "destination": "/api/contatos/:1",
-      "headers": {
-        "Content-Type": "application/json"
-      }
+      "destination": "/api/contatos/:1"
     },
     {
       "source": "^/tarefas/(adicionar|deletar|editar|visualizar)/?",
-      "destination": "/api/tarefas/:1",
-      "headers": {
-        "Content-Type": "application/json"
-      }
+      "destination": "/api/tarefas/:1"
     },
     {
       "source": "^/index\\.php$",
