@@ -1,8 +1,26 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/:path*",
-      "dest": "/api/:path*"
+      "src": "^/contatos/(adicionar|deletar|editar)/?",
+      "destination": "/api/contatos/:1",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    {
+      "src": "^/tarefas/(adicionar|deletar|editar|visualizar)/?",
+      "destination": "/api/tarefas/:1",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    {
+      "src": "^/index\\.php$",
+      "destination": "/api/index"
+    },
+    {
+      "src": "^/(.*)$",
+      "destination": "/$1"
     }
   ]
 }
