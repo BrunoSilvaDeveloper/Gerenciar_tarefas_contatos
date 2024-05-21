@@ -40,7 +40,7 @@
 						</header>
 						<section class="container-conteudo">
 							<div class="container-index-main">
-								<div class="container-index-adicionar"><a href="http://localhost:8000/Tarefas/adicionar.php"><button>Adicionar Tarefas</button></a></div>
+								<div class="container-index-adicionar"><a href="Tarefas/adicionar.php"><button>Adicionar Tarefas</button></a></div>
 								<div class="container-index-tabela">
 									<table>
 										<thead>
@@ -60,8 +60,9 @@
 												<td><?= htmlspecialchars($tarefa['tarefa']) ?></td>
 												<td><?= htmlspecialchars($tarefa['concluida']) ?></td>
 												<td>
-													<a href="Tarefas/editar.php?id=<?= $id ?>"><button>Editar</button></a>
-													<a href="Tarefas/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')"><button>Excluir</button></a>
+												<a href="Tarefas/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')"><button><i class="fas fa-eye"></i></button></a>
+													<a href="Tarefas/editar.php?id=<?= $id ?>"><button><i class="fas fa-pencil-alt"></i></button></a>
+													<a href="Tarefas/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')"><button><i class="fas fa-trash-alt"></i></button></a>
 												</td>
 											</tr>
 											<?php endforeach; ?>
@@ -79,7 +80,7 @@
 						</header>
 						<section class="container-conteudo">
 							<div class="container-index-main">
-								<div class="container-index-adicionar"><a href="http://localhost:8000/Contatos/adicionar.php"><button>Adicionar Contatos</button></a></div>
+								<div class="container-index-adicionar"><a href="Contatos/adicionar.php"><button>Adicionar Contatos</button></a></div>
 								<div class="container-index-tabela">
 									<table>
 										<thead>

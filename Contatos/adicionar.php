@@ -47,7 +47,7 @@
 						<section class="container-conteudo">
                             <div class="container-card">
                                 <div class="container-form">
-                                    <form action="http://localhost:8000/Contatos/adicionar.php" method="post" class="form">
+                                    <form action="adicionar.php" method="post" class="form">
 
                                         <!--Imput Nome-->
                                         <?php if (isset($error)): ?>
@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="container-sing-in">
                                     <h1>Mais opções</h1>
-                                    <a href="http://localhost:8000/index.php"><button>Home</button></a>
+                                    <a href="../index.php"><button>Home</button></a>
                                 </div>
                             </div>
 						</section>
