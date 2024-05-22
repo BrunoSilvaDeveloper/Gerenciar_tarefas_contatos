@@ -13,7 +13,7 @@
                 'sobrenome' => $sobrenome,
                 'phone' => $phone
             ];
-            header('Location: ../api/index.php');
+            header('Location: ../index.php');
             exit;
         }
         else{
@@ -61,9 +61,9 @@
                                         
                                         <!--Imput Telefone-->
                                         <?php if (isset($error)): ?>
-                                            <input type="text" name="phone" placeholder="Telefone é obrigatório" required style="border: 1px solid red;">
+                                            <input type="text" name="phone" placeholder="Telefone (xx) xxxxx-xxxx" required style="border: 1px solid red;">
                                         <?php else: ?>
-                                            <input type="text" name="phone" placeholder="Telefone" require>
+                                            <input type="text" name="phone" placeholder="Telefone (xx) xxxxx-xxxx" require>
                                         <?php endif; ?>
                                         
                                         <!--Botao-->
@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="container-home">
                                     <h1>Mais opções</h1>
-                                    <a href="../api/index.php"><button>Voltar</button></a>
+                                    <a href="../index.php"><button>Voltar</button></a>
                                 </div>
                             </div>
 						</section>

@@ -18,6 +18,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+}
+
+.section-index{
+  padding: 50px;
+  height: 150vh;
 }
 
 h6 {
@@ -44,28 +50,34 @@ h6 span {
   width: 90vw;
   height: 60vh;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card-front,
 .card-back {
-  width: 47%;
+  width: 80%;
   height: 100%;
   background-color: #2a2b38;
   border-radius: 6px;
   padding: 0px 20px;	
 }
 
+.card-back{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .adicionar{
   width: 45vw;
-  height: 60vh;
+  height: 520px;
   display: flex;
   margin: 0 auto;
 }
 
 .card-adicionar{
   width: 400px;
-  height: 100%;
+  height: 700px;
   background-color: #2a2b38;
   border-radius: 6px;
   padding: 0px 20px;	
@@ -315,4 +327,19 @@ td::-webkit-scrollbar-track {
 
 .ver-tarefa::-webkit-scrollbar-track {
   background: #f1f1f100;
+}
+
+
+@media (max-width: 1050px) {
+  .card-front,
+  .card-back {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-front,
+  .card-back {
+    width: 100%;
+  }
 }

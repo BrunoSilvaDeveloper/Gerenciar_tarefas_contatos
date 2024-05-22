@@ -22,7 +22,7 @@
                     'tarefa' => $tarefa,
                     'concluida' => $concluida,
                 ];
-                header('location: ../api/index.php');
+                header('location: ../index.php');
                 exit();
             }else{
                 $error = "Telefone incorreto";
@@ -67,7 +67,7 @@
                                         <input type="text" name="nome" value="<?= isset($error) && $error == 'Telefone incorreto' || isset($error) && !empty($nome) ? $nome : '' ?>" placeholder="<?= isset($error) && $error == 'Telefone incorreto' ? 'Nome' : (isset($error) ? $error : "Nome") ?>" required style="<?= isset($error) && empty($nome) ? "border: 1px solid red;": "" ?>">
 
                                         <!--Imput Telefone-->
-                                        <input type="text" name="phone" value="<?= isset($error) && $error != 'Telefone incorreto' && !empty($phone) ? $phone : '' ?>" placeholder="<?= isset($error) && $error == 'Telefone incorreto' ? $error : (isset($error) ? $error : "Telefone") ?>" required style="<?= isset($error) && $error == 'Telefone incorreto' ? "border: 1px solid red;": (isset($error) && empty($phone) ? "border: 1px solid red;": "") ?>">
+                                        <input type="text" name="phone" value="<?= isset($error) && $error != 'Telefone incorreto' && !empty($phone) ? $phone : '' ?>" placeholder="<?= isset($error) && $error == 'Telefone incorreto' ? $error . ' (xx) xxxxx-xxxx' : (isset($error) ? $error : "Telefone (xx) xxxxx-xxxx") ?>" required style="<?= isset($error) && $error == 'Telefone incorreto' ? "border: 1px solid red;": (isset($error) && empty($phone) ? "border: 1px solid red;": "") ?>">
                                         
                                         <!--Imput tarefa-->
 
@@ -79,7 +79,7 @@
                                 </div>
                                 <div class="container-home">
                                     <h1>Mais opções</h1>
-                                    <a href="../api/index.php"><button>Voltar</button></a>
+                                    <a href="../index.php"><button>Voltar</button></a>
                                 </div>
                             </div>
 						</section>

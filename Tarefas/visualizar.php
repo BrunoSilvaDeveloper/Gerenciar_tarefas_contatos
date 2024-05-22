@@ -2,7 +2,7 @@
     session_start();
 
     if(!isset($_SESSION['tarefas']) || !isset($_SESSION['tarefas'][$_GET['id']])){
-        header('location: ../api/index.php');
+        header('location: ../index.php');
         exit();
     }
 
@@ -62,7 +62,7 @@
                                 <div class="container-home">
                                     <h1>Mais opções</h1>
                                     <div class="ver-buttons">
-                                        <a href="../api/index.php"><button>Voltar</button></a>
+                                        <a href="../index.php"><button>Voltar</button></a>
                                         <a href="editar.php?id=<?= $id ?>"><button>Editar</button></a>
                                         <a href="deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir este contato?')"><button>Excluir</button></a>
                                     </div>

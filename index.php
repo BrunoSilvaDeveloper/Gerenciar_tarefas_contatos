@@ -23,12 +23,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tarefas e Contatos</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="section">
+    <section class="section section-index">
         <div class="container">
             <h6><span>Tarefas</span><span>Contatos</span></h6>
             <div class="card-3d-wrap">
@@ -76,7 +78,7 @@
                     <div class="card-back">
 						<header class="header-conteudo">
 							<div class="container-index-header">
-								<h1>Gerenciador de contatos</h1>
+								<h1>Gerenciador de contatos</h1><p>Primeiro projeto, sem validação de dados</p>
 							</div>
 						</header>
 						<section class="container-conteudo">
