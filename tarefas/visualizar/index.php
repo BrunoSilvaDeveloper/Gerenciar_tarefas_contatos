@@ -2,7 +2,7 @@
     session_start();
 
     if(!isset($_SESSION['tarefas']) || !isset($_SESSION['tarefas'][$_GET['id']])){
-        header('location: ../index.php');
+        header('location: /');
         exit();
     }
 
@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <section class="section">
@@ -62,9 +62,9 @@
                                 <div class="container-home">
                                     <h1>Mais opções</h1>
                                     <div class="ver-buttons">
-                                        <a href="../index.php"><button>Voltar</button></a>
-                                        <a href="editar.php?id=<?= $id ?>"><button>Editar</button></a>
-                                        <a href="deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir este contato?')"><button>Excluir</button></a>
+                                        <a href="/"><button>Voltar</button></a>
+                                        <a href="../editar?id=<?= $id ?>"><button>Editar</button></a>
+                                        <a href="../deletar?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir este contato?')"><button>Excluir</button></a>
                                     </div>
                                 </div>
                             </div>

@@ -1,29 +1,19 @@
 <?php 
-
     session_start();
+    $contacts = $_SESSION['contacts'];
 
-
-    if (!isset($_GET['id']) || !isset($_SESSION['contacts'][$_GET['id']])) {
-        header('Location: ../index.php');
-        exit;
-    }
-
-    $id = $_GET['id'];
-    $contact = $_SESSION['contacts'][$id];
-
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $nome = strip_tags(trim($_POST['nome']));
-        $sobrenome  = strip_tags(trim($_POST['sobrenome']));
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $nome = strip_tags(trim($_POST['nome'])); // retira as tags de html ou js e remove os espacos em branco
+        $sobrenome = strip_tags(trim($_POST['sobrenome']));
         $phone = strip_tags(trim($_POST['phone']));
-    
 
-        if($nome && $sobrenome && $phone){
-            $_SESSION['contacts'][$id] = [
+        if (!empty($nome) && !empty($phone)){ //verifica se o nome ou telefone possuem algum valor
+            $_SESSION['contacts'][] = [
                 'nome' => $nome,
-            'sobrenome' => $sobrenome,
+                'sobrenome' => $sobrenome,
                 'phone' => $phone
             ];
-            header('Location: ../index.php');
+            header('Location: /');
             exit;
         }
         else{
@@ -31,8 +21,8 @@
         }
     }
 
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -41,7 +31,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <section class="section">
@@ -51,13 +41,13 @@
                     <div class="card-front card-adicionar">
 						<header class="header-conteudo">
 							<div class="container-index-header">
-								<h1>Editar Contatos</h1>
+								<h1>Adicionar Contatos</h1>
 							</div>
 						</header>
 						<section class="container-conteudo">
                             <div class="container-card">
                                 <div class="container-form">
-                                    <form action="editar.php?id=<?= $id ?>" method="post" class="form">
+                                    <form action="" method="post" class="form">
 
                                         <!--Imput Nome-->
                                         <?php if (isset($error)): ?>
@@ -83,7 +73,7 @@
                                 </div>
                                 <div class="container-home">
                                     <h1>Mais opções</h1>
-                                    <a href="../index.php"><button>Voltar</button></a>
+                                    <a href="/"><button>Voltar</button></a>
                                 </div>
                             </div>
 						</section>

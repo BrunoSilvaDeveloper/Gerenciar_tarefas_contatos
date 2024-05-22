@@ -43,7 +43,7 @@
 						</header>
 						<section class="container-conteudo">
 							<div class="container-index-main">
-								<div class="container-index-adicionar"><a href="../tarefas/adicionar.php"><button>Adicionar Tarefas</button></a></div>
+								<div class="container-index-adicionar"><a href="tarefas/adicionar"><button>Adicionar Tarefas</button></a></div>
 								<div class="container-index-tabela">
 									<table>
 										<thead>
@@ -63,9 +63,9 @@
 												<td><?= htmlspecialchars($tarefa['tarefa']) ?></td>
 												<td><?= htmlspecialchars($tarefa['concluida']) ?></td>
 												<td>
-													<a href="../tarefas/visualizar.php?id=<?= $id ?>"><button><i class="fas fa-eye"></i></button></a>
-													<a href="../tarefas/editar.php?id=<?= $id ?>"><button><i class="fas fa-pencil-alt"></i></button></a>
-													<a href="../tarefas/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')"><button><i class="fas fa-trash-alt"></i></button></a>
+													<a href="../tarefas/visualizar?id=<?= $id ?>"><button><i class="fas fa-eye"></i></button></a>
+													<a href="../tarefas/editar?id=<?= $id ?>"><button><i class="fas fa-pencil-alt"></i></button></a>
+													<a href="../tarefas/deletar?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir esta tarefa?')"><button><i class="fas fa-trash-alt"></i></button></a>
 												</td>
 											</tr>
 											<?php endforeach; ?>
@@ -83,7 +83,7 @@
 						</header>
 						<section class="container-conteudo">
 							<div class="container-index-main">
-								<div class="container-index-adicionar"><a href="../contatos/adicionar.php"><button>Adicionar Contatos</button></a></div>
+								<div class="container-index-adicionar"><a href="contatos/adicionar"><button>Adicionar Contatos</button></a></div>
 								<div class="container-index-tabela">
 									<table>
 										<thead>
@@ -101,8 +101,8 @@
 												<td><?= htmlspecialchars($contact['sobrenome']) ?></td>
 												<td><?= htmlspecialchars($contact['phone']) ?></td>
 												<td>
-													<a href="../contatos/editar.php?id=<?= $id ?>"><button>Editar</button></a>
-													<a href="../contatos/deletar.php?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir este contato?')"><button>Excluir</button></a>
+													<a href="../contatos/editar?id=<?= $id ?>"><button>Editar</button></a>
+													<a href="../contatos/deletar?id=<?= $id ?>" onclick="return confirm('Tem certeza que deseja excluir este contato?')"><button>Excluir</button></a>
 												</td>
 											</tr>
 											<?php endforeach; ?>
